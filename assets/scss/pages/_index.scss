@@ -1,0 +1,231 @@
+/*=================================
+  main styling starts here
+=================================*/
+
+/* hero section starts here */
+.hero-section {
+  .wrapper {
+    background-image:linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0, 0.1)), url('../img/intro-bg.jpg');
+    background-size: cover;
+    @include flex(null,center,center);
+    position: relative;
+  }
+
+  .hero-content{
+    padding: 455px 0 281px;
+    @include flex(column,center,center);
+
+    a{
+      padding: 24px 30px;
+      border-radius: 5px;
+      color:$color_light;
+      font-weight: bold;
+      font-size: 22px;
+      text-align: center;
+      text-transform: uppercase;
+      background-color: #69ad31;
+      transition: .5s ease ;
+      &:hover{
+        background-color: black;
+      }
+    }
+    h2{
+      font-size: 90px;
+      color:$color_light;
+      text-transform: uppercase;
+      font-weight: bolder;
+    }
+    
+    p{
+      width: 50%;
+      margin: 22px 0 63px;
+      color: $color_light;
+      font-size: 27px;
+      text-align: center;
+      line-height: 1.6;
+    }
+    
+  }  
+}
+
+/* hero section ends here */
+
+/* section 1 section starts here */
+
+.section1{
+  position: relative;
+  background-color: #f6f6f6;
+  .wrapper{
+    padding: 170px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+.section1-left {
+flex-basis: 48%;
+h3 {
+  font-size: 51px;
+  padding-bottom:5px;
+  font-weight: bold;
+  position: relative;
+  
+  span{
+    color: #69ad31;
+    font-weight: bold;
+  }
+}
+
+p {
+  margin-top: 83px;
+  line-height: 1.6;
+  font-size: 22px;
+  color: #8b8b8b;
+}
+p:nth-of-type(2) {
+  margin-top: 22px;
+}
+
+a {
+  padding:23px 31px;
+  margin-top: 64px;
+  border-radius: 5px;
+  background-color: #69ad31; 
+  color:white;
+  font-size: 23px;
+  text-align: center;
+  text-transform: uppercase;
+  &:hover{
+    background-color: black;
+    transform: scale(1.2);
+  }
+}
+
+}
+
+.section1-right {
+  flex-basis: 48%;
+  ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  li{
+  flex-basis: 47.25%;
+  }
+  }
+
+   h4{
+    margin: 28px 0 27px;
+    font-size: 31px;
+    font-weight: bold;
+  }
+   p{
+    line-height: 1.6;
+    font-size: 20px;
+    color: #8b8b8b;
+  }
+
+}
+
+// section 1 ends here
+
+// section 2 starts here
+.section2{
+  background-color: #69ad31;
+  .wrapper{
+    padding: 100px 0 222px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__title{
+    margin-top: 68px;
+    padding-bottom:5px;
+    position: relative;
+    color: white;
+    font-size: 53px;
+    font-weight: bold;
+    text-align: center;
+  }
+  &__title::after {
+    content: "";
+    width: 100px;
+    height: 0;
+    border-top: 4px solid white;
+    display: block;
+    position: absolute;
+    top: 84px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__para {
+    margin-top: 54px;
+    color:#c6e8b8;
+    font-size: 27px;
+  }
+
+
+  .our-serviceslist{
+    display: flex;
+    justify-content: space-between;
+    /* padding-top: 100px; */
+    li{
+      flex-basis: 20.62%;  
+    }
+  }
+  figure{
+    border-radius: 50%;
+    border: 10px solid #78b546;
+  }
+  
+
+}
+
+.our-services-bottom{
+  margin-left: 27px;
+  margin-right: 27px;
+  margin-top: 128px;
+}
+
+    // .our-services-top{
+    //   // margin-top: 68px;
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   flex-direction: column;
+    // }
+
+  
+    // .our-services-top>hr{
+    //   width: 50px;
+    //   border-top:10px;
+    //   color:white;
+    //   display: none;
+    // }
+
+    
+  .our-services-img {
+    border-radius: 50%;
+  }
+  .our-serviceslist > li >h4{
+    margin-top: 35px;
+    margin-bottom: 17px;
+    color:white;
+    font-size: 33px;
+    text-align: center;
+  }
+  .our-serviceslist > li:last-of-type >h4{
+  letter-spacing: -2px;
+  }
+  .our-serviceslist>li>p{
+    color:#c6e8b8;
+    text-align:center;
+    line-height: 1.6;
+    font-size: 21px;
+  }
+  
+// section 2 ends here
+
+/*=================================
+  main styling ends here
+=================================*/
