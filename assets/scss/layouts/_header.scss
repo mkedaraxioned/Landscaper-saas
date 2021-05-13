@@ -1,6 +1,64 @@
 /*=================================
   Header styling starts here
 =================================*/
+header{
+
+  background-color: #363636;
+  color:#eceded;
+  .wrapper {
+    padding: 51px 0px 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    
+    .navbar{
+      margin-top: 6px;
+      flex-basis: 49.9%;
+      li{
+        margin-left: 60px;
+        text-decoration: none;
+        list-style-type: none;
+      }
+      
+      li:first-of-type {
+        margin-left: 0;
+      }
+      
+      a{
+        color:#eceded;
+        font-size: 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      
+      a:hover
+      {
+        color: #66a333;
+      }            
+    }
+
+    .brand-name a {
+      color: $color_light;
+      font-size: 28px;
+      text-indent: -9999px;
+    }
+    .brand-name img {
+      width: 202px;
+      height: 36px;
+      float: right;
+    }
+    
+    .menu-bar { display: none; }
+  }
+
+}
+
+
+
+
+
+
+
+
 
 
 /*=================================
