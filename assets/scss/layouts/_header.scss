@@ -10,11 +10,18 @@ header{
     display: flex;
     justify-content: space-between;
     
+    nav { 
+      margin-right: 1%;
+      flex-basis: 85%;
+      @include media-max(1023px) { padding-top: 0; }
+    }
     .navbar{
       margin-top: 6px;
-      flex-basis: 49.9%;
+      display: flex;
+      justify-content: flex-end;
+      @include media-max(1023px) {  -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end;  }
       li{
-        margin-left: 60px;
+        margin-left: 5%;
         text-decoration: none;
         list-style-type: none;
       }
@@ -48,7 +55,83 @@ header{
     }
     
     .menu-bar { display: none; }
+     /* hamburger css starts here*/
+    .menu-bar {
+      display: none;
+      font-weight: bold;
+      @include media-max(1023px) {        
+          display: block;
+          float: right;          
+      }     
+    }
+    
+    .toggle {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+      
+    .toggle-item {
+      padding: 10px 2%;
+    }
+      
+    .inactive {   display: none; }
+
+    .active {   display: block;   }
+
+    .toggle:hover {  display: -webkit-box;  display: -ms-flexbox;  display: flex; }
+
+    .hide { visibility: hidden;   }
+
+    .show {  visibility: visible;   } 
+         /* hamburger css ends here*/   
+         .hide-menu-item {
+           @include media-max(1023px) {    display: none;    }    
+         }
   }
+// media query
+    /* Header css starts here */
+    .header-effect {
+      width: 100vw;
+      height: 100vh;
+      background-color: #51eb36;
+    }
+  
+    .hamburger-effect {  background-color: rgba(0, 0, 0, 0.9);   }
+  
+    .no-scroll {  overflow: hidden;   }
+   
+    .hamburger-menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
+      top: 50%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+  
+    .hamburger-menu li {
+      width: 30%;
+      padding: 10px 10%;
+      margin-bottom: 5px;
+      background: rgba(255, 255, 255, 0.8);
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  
+    .show-menu-item {  display: block;   }
+  
+    .bars-ico {  float: right;  }
+
+    /* Header css ends here */
+  
 
 }
 

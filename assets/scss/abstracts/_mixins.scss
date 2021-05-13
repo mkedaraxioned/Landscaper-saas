@@ -52,3 +52,25 @@ align-items: $ai;
     text-align: center;
     font-size: 24px;
 }
+
+@mixin contactlist-span {
+  margin-bottom: 50px;
+  display: block;
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+@mixin contactlist-para {
+  text-align: center;
+  color: #8b8b8b;
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+@mixin  input-fields {
+  width: 100%;
+  padding: 22px 0 22px 30px;
+  font-size: 16px;
+}
+
